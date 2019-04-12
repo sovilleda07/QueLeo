@@ -728,6 +728,12 @@ blockquote{
 .star-rating .checked {
     color: gold;
 }
+.star-rating p{
+    font-family: var(--fuenteTexto);
+    text-align: center;
+    margin: 5px 0;
+    font-size: 1.3rem;
+}
 @media (min-width: 850px){
     .star-rating{
         font-size: 2rem;
@@ -804,6 +810,9 @@ a {
 }
 button:hover, a:hover {
     opacity: 0.7;
+}
+#resena{
+    margin-top: 10px;
 }
 /* POST */
 
