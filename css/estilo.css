@@ -213,6 +213,11 @@ header nav ul li .caret{
     margin-top: .7rem;
     border: none;
 }
+@media (max-width: 850px){
+    .boton{
+        padding: 1rem 1.3rem;
+    }
+}
 /* @media (max-width: 850px) {
     .hero{
         width: 98vw;
@@ -521,6 +526,9 @@ header nav ul li .caret{
     font-weight: 700;
     margin-bottom: 0;
 }
+.autores-autor-datos h1:last-child{
+    text-align: center;
+}
 @media (min-width: 768px) {
     .autores-autor-datos h1{
         font-size: 2.3rem;
@@ -536,8 +544,8 @@ header nav ul li .caret{
 .autores-autor-datos img{
     display:block;
     margin:auto;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); */
+    /* filter: grayscale(100%); */
 }
 .formato-post{
     padding-bottom: 10px;
@@ -559,16 +567,19 @@ header nav ul li .caret{
 .autores-autor-biografia{
   font-family: var(--fuenteTexto);
 }
+.autores-autor-biografia span{
+    font-weight: bold;
+}
 .biografia{
-    line-height: 1.8rem;
-    font-size: 1rem;
+    line-height: 2rem;
+    font-size: 1rem !important;
     text-align: justify;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 blockquote{
     background: var(--grisClaro);
     border-left: 10px solid var(--rosaOscuro);
-    margin: 1.5em 10px;
+    margin: 0.5em 10px;
     padding: 0.5em 10px;
     /* quotes: "\201C""\201D""\2018""\2019"; */
     font-family: var(--fuenteTitulos);
@@ -586,13 +597,23 @@ blockquote{
     margin: 0 auto;
     position: relative;
 }
+#fuente{
+    /* font-family: var(--fuenteAutor); */
+    font-size: 1rem;
+}
 @media (min-width: 768px) {
     .lista-libros{
         grid-template-columns: repeat(3, 1fr);
     }
     blockquote{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         text-align: center;
+    }
+    .biografia{
+        font-size: 1.3rem !important;
+    }
+    #fuente{
+        font-size: 1.3rem;
     }
 }
 /* AUTORES */
@@ -870,3 +891,29 @@ button:hover, a:hover {
 }
 /* Mapa */
 /* CONTACTO */
+
+/* NOTICIAS */
+.suscribirse{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.icono-form{
+    font-size: 1rem;
+    display: block;
+}
+.icono-form span{
+    font-size: 5rem;
+}
+.input-group-field{
+    font-family: var(--fuenteTexto);
+    margin-bottom: 15px;
+}
+
+@media (min-width: 850px){
+    .icono-form{
+        font-size: 1.5rem;
+    }
+
+}
+
+/* NOTICIAS */
