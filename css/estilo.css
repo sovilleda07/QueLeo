@@ -515,6 +515,14 @@ header nav ul li .caret{
     transition: 0.3s;
     margin-bottom: 2.5rem;    
 }
+.autores-autor img{
+    transition: 1s;
+}
+.autores-autor img:hover{
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    transition: 1s;
+}
 .autores-autor:last-child{
     margin-bottom: 0;    
 }
@@ -683,8 +691,16 @@ blockquote{
     text-align: center;
 }
 .datos-libro{
-    /* margin: auto; */
     text-align: center;
+}
+/* Para que cuando no haya hover, tenga tiempo de transición */
+.datos-libro img{
+    transition: 1s;
+}
+.datos-libro img:hover{
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    transition: 1s;
 }
 .datos-libro p{
     font-size: 1.1rem;
@@ -699,7 +715,6 @@ blockquote{
     line-height: 2rem;
     padding-bottom: 10px;
 }
-/* @media (min-width: 330px) */
 @media (min-width: 850px) {
     .entrada h3{
         font-size: 2rem;
@@ -747,6 +762,15 @@ blockquote{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
     margin-bottom: 15px;
+}
+
+.otras-entradas img{
+    transition: 1s;
+}
+.otras-entradas img:hover{
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    transition: 1s;
 }
 .sidebar ul {
     list-style: none;
