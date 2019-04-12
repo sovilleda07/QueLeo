@@ -6,7 +6,8 @@
     --azulClaro: #D5EBFF;
     --blanco: #FFFFFF;
     --grisClaro: #EFEFEF;
-    --grisOscuro:#636363;
+    --grisOscuro:#808080;
+    --grisNav:  #909090;
     --negro: #000000;
     --fuenteTitulos: 'Montserrat', sans-serif;
     --fuenteSubtitulos: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,7 +46,7 @@ header{
 }
 /* Barra */
 header nav{
-    background: #909090;
+    background: var(--grisNav);
     /* Para posicionar sobre los demas elementos */
     z-index: 1000;
 }
@@ -295,7 +296,7 @@ header nav ul li .caret{
     justify-content: space-evenly;
     align-items: center;    
 }
-/* para reducir el tamño de la imagen cuando se posiciona el mouse */
+/* para reducir el tamaño de la imagen cuando se posiciona el mouse */
 .portada:hover{
     -webkit-transform:scale(0.9);
     -moz-transform:scale(0.9);
@@ -418,7 +419,7 @@ header nav ul li .caret{
     margin-top: 20px;
 }
 .footer-sitio {
-    background-color: var(--rosaClaro);
+    background-color: var(--grisNav);
     /* margin-top: 30px; */
     padding-top: 10px;
     text-align: center;
@@ -446,7 +447,7 @@ header nav ul li .caret{
     color: var(--azulOscuro);
 }
 .copyright {
-    background-color: var(--rosaOscuro);
+    background-color: var(--grisOscuro);
     padding: 20px 0;
 }
 .copyright a{
@@ -599,7 +600,6 @@ blockquote{
     border-left: 10px solid var(--rosaOscuro);
     margin: 0.5em 10px;
     padding: 0.5em 10px;
-    /* quotes: "\201C""\201D""\2018""\2019"; */
     font-family: var(--fuenteTitulos);
     font-size: 1.1rem;
     text-align: justify;
